@@ -10,7 +10,8 @@
   "dependencies": {
     "vue": "^3.0.5",
     "vue-i18n": "^9.1.7",
-    "vue-router": "4"
+    "vue-router": "4",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@ehutch79/vite-eslint": "^0.0.1",
