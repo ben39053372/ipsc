@@ -8,10 +8,12 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "vue": "^3.0.5"
+    "vue": "^3.0.5",
+    "vue-router": "4"
   },
   "devDependencies": {
     "@ehutch79/vite-eslint": "^0.0.1",
+    "@types/vue": "^2.0.0",
     "@typescript-eslint/eslint-plugin": "^4.28.4",
     "@typescript-eslint/parser": "^4.28.4",
     "@vitejs/plugin-vue": "^1.2.5",
