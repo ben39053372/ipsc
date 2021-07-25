@@ -1,0 +1,55 @@
+<template lang="">
+  <div class="login">
+    <h1>IPSC System</h1>
+    <Paper class="form">
+      <h2>Login</h2>
+      <Input v-model="username" />
+      <Input v-model="password" />
+      <Button>Login</Button>
+    </Paper>
+  </div>
+</template>
+<script>
+  import { defineComponent } from 'vue';
+  import Input from '../components/Input.vue';
+  import Button from '../components/Button.vue';
+  import Paper from '../components/Paper.vue';
+
+  export default defineComponent({
+    components: {
+      Input,
+      Button,
+      Paper,
+    },
+    data() {
+      return {
+        username: '',
+        password: '',
+      };
+    },
+    methods: {
+      login(e) {
+        console.log(e);
+        console.log('login', this.username, this.password);
+      },
+    },
+  });
+</script>
+
+<style scoped>
+  .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .form > * {
+    margin: 10px;
+  }
+</style>
