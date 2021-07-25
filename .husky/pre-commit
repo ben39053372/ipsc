@@ -2,6 +2,6 @@
 . "$(dirname "$0")/_/husky.sh"
 
 # npm test
-npx stylelint "src/**/*.{css,scss,sass}"
+npx stylelint "src/**/*.{css,scss,sass,vue}"
 npx eslint "src/**/*.{js,tsx,tsx,ts,vue}" --fix
 npm run build
