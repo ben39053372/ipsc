@@ -6,7 +6,7 @@
       <Input v-model="username" />
       <Input v-model="password" />
       <div class="actions">
-        <Button>Login</Button>
+        <Button @click="login">Login</Button>
         <Button outline color="secondary">Forgot Password</Button>
       </div>
     </Paper>
@@ -17,6 +17,7 @@
   import Input from '../components/Input.vue';
   import Button from '../components/Button.vue';
   import Paper from '../components/Paper.vue';
+  import router from '../router';
 
   export default defineComponent({
     components: {
@@ -33,6 +34,7 @@
     methods: {
       login() {
         console.log('login', this.username, this.password);
+        router.push({ name: 'Home' });
       },
     },
   });
