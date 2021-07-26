@@ -1,15 +1,18 @@
-<template lang="">
+<template>
   <div class="login">
     <h1>IPSC System</h1>
     <Paper class="form">
       <h2>Login</h2>
       <Input v-model="username" />
       <Input v-model="password" />
-      <Button>Login</Button>
+      <div class="actions">
+        <Button>Login</Button>
+        <Button outline color="secondary">Forgot Password</Button>
+      </div>
     </Paper>
   </div>
 </template>
-<script>
+<script lang="ts">
   import { defineComponent } from 'vue';
   import Input from '../components/Input.vue';
   import Button from '../components/Button.vue';
@@ -28,8 +31,7 @@
       };
     },
     methods: {
-      login(e) {
-        console.log(e);
+      login() {
         console.log('login', this.username, this.password);
       },
     },
@@ -51,5 +53,9 @@
 
   .form > * {
     margin: 10px;
+  }
+
+  .actions > * {
+    margin: 0 5px;
   }
 </style>
