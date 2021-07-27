@@ -1,4 +1,3 @@
-
 :root {
   --bg-color: #495867;
   --main-color: #3b3355;
@@ -6,15 +5,5 @@
   --thrid-color: #bfcde0;
   --text-color: #f7f7ff;
   --error-color: #fe5f55;
-  --info-color: #ff9800;
   --paper-text-color: #9fadc0
-}
-
-body {
-  margin: 0;
-  color: var(--text-color)
-}
-
-h1 {
-  font-size: 2rem;
 }
