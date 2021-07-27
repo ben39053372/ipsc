@@ -21,6 +21,10 @@ const routes: RouteRecordRaw[] = [
     name: 'Course',
     component: () => import('../screens/Course.vue'),
   },
+  {
+    path: '/:pathMatch(.*)',
+    component: () => import('../screens/404.vue'),
+  },
 ];
 
 export default createRouter({
