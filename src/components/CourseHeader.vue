@@ -42,7 +42,7 @@
     flex-direction: row;
     flex: 1;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 12px 18px;
   }
 
   .row > * {

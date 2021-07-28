@@ -11,8 +11,9 @@
 <style>
   .paper {
     background: var(--paper-bg-color);
-    padding: 30px 40px;
+    padding: 10px 20px;
     border-radius: 10px;
+    flex-wrap: wrap;
     color: var(--paper-text-color);
     text-shadow: #0004 0 0 5px;
     box-shadow: 1px 1px 10px #999;
