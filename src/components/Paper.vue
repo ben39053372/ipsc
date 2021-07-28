@@ -10,11 +10,13 @@
 </script>
 <style>
   .paper {
-    background: #fff;
+    background: var(--paper-bg-color);
     padding: 30px 40px;
     border-radius: 10px;
     color: var(--paper-text-color);
     text-shadow: #0004 0 0 5px;
     box-shadow: 1px 1px 10px #999;
+    font-weight: 700;
+    margin-bottom: 8px;
   }
 </style>
