@@ -7,7 +7,7 @@ orbs: # declare what orbs we are going to use
 # Orchestrate or schedule a set of jobs
 workflows:
   jobs:
-    - build
+    - build-and-test
 
 jobs:
   build-and-test:
@@ -41,10 +41,10 @@ jobs:
           - package.json
           - yarn.lock
           - app.yaml
-  deploy:
-    steps:
-      - checkout
-      - run:
-        name: Deploy to Vercel
-        command: |
-          git push
+  # deploy:
+  #   steps:
+  #     - checkout
+  #     - run:
+  #       name: Deploy to Vercel
+  #       command: |
+  #         git push
