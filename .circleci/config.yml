@@ -5,9 +5,9 @@ orbs: # declare what orbs we are going to use
   node: circleci/node@2.0.2 # the node orb provides common node-related configuration
 
 # Orchestrate or schedule a set of jobs
-workflows:
-  jobs:
-    - build-and-test
+# workflows:
+#   jobs:
+#     - build-and-test
 
 jobs:
   build-and-test:
