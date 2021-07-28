@@ -1,10 +1,12 @@
 <template>
   <div class="header">
+    <h4>Course Intro</h4>
     <Paper class="row">
       <div>Qrcode</div>
       <div>course id: XXX</div>
       <div>rank: XXX</div>
     </Paper>
+    <h4>Course Description</h4>
     <Paper class="row">
       <div>gun load</div>
       <div>empty</div>
@@ -39,6 +41,7 @@
     display: flex;
     flex-direction: row;
     flex: 1;
+    flex-wrap: wrap;
     padding: 10px;
   }
 
