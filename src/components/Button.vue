@@ -25,6 +25,7 @@
 <style scope>
   button {
     background: var(--main-color);
+    border-color: var(--main-color);
     padding: 8px 20px;
     color: var(--text-color);
     border-radius: 4px;
