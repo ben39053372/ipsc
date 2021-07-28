@@ -35,12 +35,12 @@ jobs:
           command: |
             npm run
 
-      - store_artifacts:
-        paths:
-          - dist
-          - package.json
-          - yarn.lock
-          - app.yaml
+      # - store_artifacts:
+      #   paths:
+      #     - dist
+      #     - package.json
+      #     - yarn.lock
+      #     - app.yaml
   # deploy:
   #   steps:
   #     - checkout
