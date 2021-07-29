@@ -15,7 +15,7 @@
     border-radius: 10px;
     flex-wrap: wrap;
     color: var(--paper-text-color);
-    text-shadow: #0004 0 0 5px;
+    text-shadow: #0004 1px 2px 4px;
     box-shadow: 1px 1px 10px #999;
     font-weight: 700;
     margin-bottom: 8px;

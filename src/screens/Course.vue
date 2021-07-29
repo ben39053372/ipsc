@@ -1,16 +1,22 @@
 <template>
   <div class="container">
     <CourseHeader />
-    <CourseRecord />
+    <!-- <CourseFinalRecord /> -->
+    <CourseScoreboard />
   </div>
 </template>
 <script lang="ts">
   import { defineComponent } from 'vue';
   import CourseHeader from '../components/CourseHeader.vue';
-  import CourseRecord from '../components/CourseRecord.vue';
+  import CourseFinalRecord from '../components/CourseFinalRecord.vue';
+  import CourseScoreboard from '../components/CourseScoreboard.vue';
 
   export default defineComponent({
-    components: { CourseHeader, CourseRecord },
+    components: {
+      CourseHeader,
+      // CourseFinalRecord,
+      CourseScoreboard,
+    },
     provide: {},
     setup() {},
   });
@@ -20,6 +26,6 @@
   .container {
     flex: 1;
     align-self: flex-start;
-    margin: 10px 30px;
+    padding: 10px 30px;
   }
 </style>
