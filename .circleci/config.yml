@@ -45,6 +45,15 @@ jobs:
       - image: cimg/node:14.17.3
     steps:
       - run:
+          name: set git email 
+          command: git config --global user.email "ben39053372@gmail.com"
+      - run:
+          name: set git name
+          command: git config --global user.name "ben39053372"
+      - run:
+          name: set git remote
+          command: git remote -v
+      - run:
           command: |
             git push https://github.com/ben39053372/ipsc.git master
           name: Deploy to production branch
