@@ -10,18 +10,3 @@
     components: {},
   });
 </script>
-
-<style>
-  #app {
-    min-height: 100vh;
-    max-width: 100vw;
-    background: var(--bg-color);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-</style>
