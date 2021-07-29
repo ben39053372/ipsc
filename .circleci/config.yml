@@ -9,7 +9,10 @@ workflows:
   version: 1
   build_and_test:
     jobs:
-      - build
+      - build:
+          filters:
+            branches:
+              ignore: production
 
 jobs:
   build:
@@ -33,6 +36,6 @@ jobs:
           command: |
             npm run build
           name: Build
-      # - run:
-      #     command: |
-      #       npm run
+      - run:
+          command: |
+            npm run
