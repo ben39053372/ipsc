@@ -3,6 +3,7 @@ version: 2.1
 
 orbs: # declare what orbs we are going to use
   node: circleci/node@2.0.2 # the node orb provides common node-related configuration
+  gcp-cloud-run: circleci/gcp-cloud-run@1.0.2
 
 # Orchestrate or schedule a set of jobs
 workflows:
@@ -13,7 +14,6 @@ workflows:
           filters:
             branches:
               ignore: production
-
 
 jobs:
   build:
