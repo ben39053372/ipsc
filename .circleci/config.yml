@@ -3,14 +3,20 @@ version: 2.1
 
 orbs: # declare what orbs we are going to use
   node: circleci/node@2.0.2 # the node orb provides common node-related configuration
+  gcp-cloud-run: circleci/gcp-cloud-run@1.0.2
 
 # Orchestrate or schedule a set of jobs
-# workflows:
-#   jobs:
-#     - build-and-test
+workflows:
+  version: 1
+  build_and_test:
+    jobs:
+      - build:
+          filters:
+            branches:
+              ignore: production
 
 jobs:
-  build-and-test:
+  build:
     docker:
       - image: cimg/node:14.17.3
     steps:
@@ -31,20 +37,3 @@ jobs:
           command: |
             npm run build
           name: Build
-      - run:
-          command: |
-            npm run
-
-      # - store_artifacts:
-      #   paths:
-      #     - dist
-      #     - package.json
-      #     - yarn.lock
-      #     - app.yaml
-  # deploy:
-  #   steps:
-  #     - checkout
-  #     - run:
-  #       name: Deploy to Vercel
-  #       command: |
-  #         git push
