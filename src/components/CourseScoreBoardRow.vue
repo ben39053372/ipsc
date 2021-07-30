@@ -1,7 +1,7 @@
 <template>
   <tr>
     <td v-for="(col, i) in source" :key="i">
-      {{ score }}
+      {{ col }}
     </td>
   </tr>
 </template>
