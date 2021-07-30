@@ -5,6 +5,7 @@
       <table>
         <thead>
           <tr>
+            <th>ID:</th>
             <th v-for="(header, id) in headers" :key="id" class="">
               {{ header }}
             </th>
@@ -12,6 +13,7 @@
         </thead>
         <tbody>
           <tr v-for="(scores, index) in data" :key="index" class="">
+            <td>{{ index + 1 }}</td>
             <td v-for="(score, i) in scores" :key="i" class="">
               {{ score }}
             </td>
