@@ -1,4 +1,4 @@
-import { InjectionKey } from '@vue/runtime-core';
+import { InjectionKey } from 'vue';
 import { createStore, Store, useStore as _useStore } from 'vuex';
 import { counterModule } from './modules/counter';
 

@@ -17,7 +17,7 @@
   </div>
 </template>
 <script>
-  import { defineComponent } from '@vue/runtime-core';
+  import { defineComponent } from 'vue';
   import Paper from './Paper.vue';
   export default defineComponent({
     name: 'CourseHeader',

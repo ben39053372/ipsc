@@ -5,7 +5,7 @@
   </Paper>
 </template>
 <script lang="ts">
-  import { defineComponent } from '@vue/runtime-core';
+  import { defineComponent } from 'vue';
   import Paper from './Paper.vue';
   import Table from './Table.vue';
   export default defineComponent({

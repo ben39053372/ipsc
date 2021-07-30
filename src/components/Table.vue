@@ -19,7 +19,7 @@
   </table>
 </template>
 <script lang="ts">
-  import { defineComponent } from '@vue/runtime-core';
+  import { defineComponent } from 'vue';
   import { PropType } from 'vue';
 
   export default defineComponent({
