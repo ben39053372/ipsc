@@ -2,7 +2,7 @@
   <span v-if="!isEdit" :value="value" @click="handleOnClick">
     {{ value }}
   </span>
-  <div v-if="isEdit" class="backdrop">
+  <div v-if="isEdit">
     <input
       ref="input"
       size="1"
@@ -59,6 +59,7 @@
   input {
     /* padding: 10px 10px; */
     min-width: 50px;
+    max-width: 8ch;
     border: 1px solid #0002;
     border-radius: 8px;
     outline: none;
