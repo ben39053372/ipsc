@@ -33,6 +33,7 @@
     border-style: solid;
     font-weight: 700;
     transition: transform 0.1s;
+    user-select: none;
   }
 
   button:active {
