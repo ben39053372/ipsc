@@ -13,8 +13,8 @@
         </thead>
         <tbody>
           <template v-for="(scores, index) in data" :key="index">
-            <tr @click="() => handleRowClick(index)">
-              <td>{{ index + 1 }}</td>
+            <tr>
+              <td @click="() => handleRowClick(index)">{{ index + 1 }}</td>
               <td v-for="(score, key) in scores" :key="key">
                 <EditableText
                   v-if="key === 'name'"
@@ -85,6 +85,9 @@
                   <Button>2A</Button>
                   <Button>2C</Button>
                   <Button>2D</Button>
+                  <Button>Miss</Button>
+                  <Button>NS</Button>
+                  <div style="border-left: 1px solid #000" />
                   <input value="" />
                   <Button type="submit">submit</Button>
                 </div>
@@ -130,11 +133,9 @@
     },
     methods: {
       handleValueChange(index: any, key: any, value: any) {
-        console.log(index, key, value);
         this.data[index][key] = value;
       },
       handleRowClick(index: number) {
-        console.log(index);
         if (index === this.selectedRow) this.selectedRow = null;
         else this.selectedRow = index;
       },
