@@ -1,7 +1,7 @@
 <template>
   <h4>Scoreboard</h4>
   <Paper class="record">
-    <div style="height: 500px; overflow: auto">
+    <div style="height: 450px; overflow: auto; overscroll-behavior: none">
       <table>
         <thead>
           <tr>
@@ -141,6 +141,7 @@
     position: relative;
     text-align: center;
     border-collapse: collapse;
+    overscroll-behavior: none;
   }
 
   thead {

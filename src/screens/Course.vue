@@ -12,7 +12,6 @@
   export default defineComponent({
     components: {
       CourseHeader,
-      // CourseFinalRecord,
       CourseScoreboard,
     },
     provide: {},
@@ -26,5 +25,6 @@
     max-width: 90%;
     align-self: flex-start;
     margin: 10px -10px;
+    overscroll-behavior: none;
   }
 </style>
