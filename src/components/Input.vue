@@ -1,5 +1,5 @@
 <template lang="">
-  <input :value="modelValue" @input="handleInput" />
+  <input :class="[small]" :value="modelValue" @input="handleInput" />
 </template>
 <script lang="ts">
   import { defineComponent } from 'vue';
@@ -11,6 +11,10 @@
         type: String,
         require: true,
         default: '',
+      },
+      small: {
+        type: Boolean,
+        default: false,
       },
     },
     emits: ['update:modelValue'],
@@ -34,5 +38,10 @@
   input:focus {
     border-color: var(--main-color);
     box-shadow: 0 0 3px 1px var(--main-color);
+  }
+
+  .small {
+    padding: 2px 4px;
+    border-radius: 4px;
   }
 </style>
