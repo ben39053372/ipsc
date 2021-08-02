@@ -10,10 +10,11 @@
 </script>
 <style>
   .paper {
+    display: flex;
+    flex-wrap: wrap;
     background: var(--paper-bg-color);
     padding: 10px 28px;
     border-radius: 10px;
-    flex-wrap: wrap;
     color: var(--paper-text-color);
     text-shadow: #0004 1px 2px 4px;
     box-shadow: 1px 1px 10px #999;
