@@ -24,7 +24,6 @@
     components: {
       Paper,
     },
-    props: {},
     setup() {
       return {};
     },
