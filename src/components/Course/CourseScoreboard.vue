@@ -1,6 +1,11 @@
 <template>
-  <h4>Scoreboard</h4>
-  <Paper class="record">
+  <div class="headerRow">
+    <h4>Scoreboard</h4>
+    <div>
+      <Button>報名</Button>
+    </div>
+  </div>
+  <Paper class="scoreboard">
     <div style="height: 450px; overflow: auto; overscroll-behavior: none">
       <table>
         <thead>
@@ -102,10 +107,10 @@
 
 <script lang="ts">
   import { defineComponent } from 'vue';
-  import Paper from './Paper.vue';
-  import data from '../mock/data.json';
-  import EditableText from './EditableText.vue';
-  import Button from './Button.vue';
+  import Paper from '../Paper.vue';
+  import data from '../../mock/data.json';
+  import EditableText from '../EditableText.vue';
+  import Button from '../Button.vue';
   export default defineComponent({
     components: {
       Paper,
@@ -144,14 +149,19 @@
 </script>
 
 <style scoped>
-  .record {
-    overflow: auto;
-    max-width: 100vw;
+  .scoreboard {
     padding: 10px;
-    width: auto;
+  }
+
+  .headerRow {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding: var(--space-sm) 0;
   }
 
   table {
+    border-style: none;
     background-color: var(--secound-color);
     width: 100%;
     position: relative;

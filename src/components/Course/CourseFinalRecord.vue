@@ -6,8 +6,8 @@
 </template>
 <script lang="ts">
   import { defineComponent } from 'vue';
-  import Paper from './Paper.vue';
-  import Table from './Table.vue';
+  import Paper from '../Paper.vue';
+  import Table from '../Table.vue';
   export default defineComponent({
     components: {
       Paper,

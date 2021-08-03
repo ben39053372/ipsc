@@ -2,7 +2,6 @@
   <div class="header">
     <h4>Course Intro</h4>
     <Paper class="row">
-      <div>Qrcode</div>
       <div>course id: XXX</div>
       <div>rank: XXX</div>
     </Paper>
@@ -18,13 +17,14 @@
 </template>
 <script>
   import { defineComponent } from 'vue';
-  import Paper from './Paper.vue';
+  import Paper from '../Paper.vue';
 
   export default defineComponent({
     name: 'CourseHeader',
     components: {
       Paper,
     },
+    props: {},
     setup() {
       return {};
     },
