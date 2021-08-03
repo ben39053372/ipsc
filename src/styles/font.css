@@ -1,0 +1,38 @@
+:root {
+  --text-xs: 0.75rem;
+  --text-sm: 0.9rem;
+  --text-md: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-xxl: 2rem;
+}
+
+@media only screen and (min-width: 640px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1536px) {
+  html {
+    font-size: 20px;
+  }
+}

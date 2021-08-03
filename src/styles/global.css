@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  font-size: 14px;
 }
 
 body {
@@ -32,7 +33,23 @@ h6 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: var(--text-xxl);
+}
+
+h2 {
+  font-size: var(--text-xl)
+}
+
+h3 {
+  font-size: var(--text-lg)
+}
+
+h4 {
+  font-size: var(--text-md)
+}
+
+h5 {
+  font-size: var(--text-sm)
 }
 
 ::-webkit-scrollbar-track {

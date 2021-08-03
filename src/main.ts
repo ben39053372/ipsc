@@ -5,6 +5,8 @@ import router from './router';
 import store, { key } from './store';
 import './styles/global.css';
 import './styles/colors.css';
+import './styles/font.css';
+import './styles/spacing.css';
 
 const app = createApp(App);
 app.use(router);
