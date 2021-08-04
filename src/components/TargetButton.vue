@@ -19,6 +19,8 @@
 <style scoped>
   .container {
     position: relative;
+    width: 180px;
+    height: 180px;
     transition: transform 0.2s;
     filter: drop-shadow(10px 10px 20px #0004);
   }
@@ -34,8 +36,8 @@
   }
 
   .target {
-    width: 180px;
-    height: 180px;
+    width: 100%;
+    height: 100%;
     background-color: rgb(244, 195, 118);
     -webkit-clip-path: polygon(
       35% 0,
