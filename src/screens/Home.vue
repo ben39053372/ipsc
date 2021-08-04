@@ -1,25 +1,27 @@
-<template>
-  <div>Home {{ t('name') }}</div>
-  <button @click="add">add</button>
-  <button @click="sub">sub</button>
-  <div>counter: {{ counter }}</div>
+<template lang="">
+  <div class="home">
+    <TargetButton text="New Course" @click="handleNewCourseClick" />
+    <TargetButton text="A" />
+  </div>
 </template>
-<script>
-  import { computed, defineComponent } from 'vue';
-  import { useI18n } from 'vue-i18n';
-  import { useStore } from '../store';
-  import { CounterActionsType } from '../store/modules/counter';
+<script lang="ts">
+  import { defineComponent } from 'vue';
+  import TargetButton from '../components/TargetButton.vue';
   export default defineComponent({
-    name: 'Home',
-    setup() {
-      const store = useStore();
-      const { t } = useI18n();
-      return {
-        t,
-        counter: computed(() => store.state.counter.count),
-        add: () => store.dispatch(`counter/${CounterActionsType.add}`),
-        sub: () => store.dispatch(`counter/${CounterActionsType.sub}`),
-      };
+    components: { TargetButton },
+    methods: {
+      handleNewCourseClick() {
+        console.log('hi');
+      },
     },
   });
 </script>
+
+<style scoped>
+  .home {
+    display: flex;
+    align-self: flex-start;
+    justify-content: stretch;
+    margin: 10px;
+  }
+</style>
