@@ -23,7 +23,6 @@
 
 <style scoped>
   .container {
-    align-self: flex-start;
     overscroll-behavior: none;
   }
 </style>

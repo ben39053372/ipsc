@@ -1,10 +1,9 @@
 <template lang="">
-  <div class="home">
-    <Container class="row">
-      <TargetButton text="New Course" @click="handleNewCourseClick" />
-      <TargetButton text="Join Course" @click="handleJoinCourseClick" />
-    </Container>
-  </div>
+  <img src="/images/ipsc.png" width="100" />
+  <Container class="row">
+    <TargetButton text="New Course" @click="handleNewCourseClick" />
+    <TargetButton text="Join Course" @click="handleJoinCourseClick" />
+  </Container>
 </template>
 <script lang="ts">
   import { defineComponent } from 'vue';
@@ -27,7 +26,6 @@
 <style scoped>
   .home {
     display: flex;
-    align-self: flex-start;
     flex-direction: column;
     align-items: center;
     margin: 10px;
@@ -39,6 +37,9 @@
 
   .row {
     display: flex;
+    flex: 1;
+    width: 100%;
+    justify-content: space-around;
     padding: var(--space-lg) var(--space-md);
   }
 </style>

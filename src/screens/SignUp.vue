@@ -1,6 +1,5 @@
 <template lang="">
   <div class="signUp">
-    <h1>Sign Up</h1>
     <Paper class="form">
       <div>Sign Up</div>
       <Input v-model="firstName" placeholder="First Name" />

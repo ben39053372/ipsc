@@ -18,20 +18,21 @@
 </script>
 <style scoped>
   .container {
+    user-select: none;
     position: relative;
     width: 180px;
     height: 180px;
     transition: transform 0.2s;
-    filter: drop-shadow(10px 10px 20px #0004);
+    filter: drop-shadow(10px 10px 20px #0006);
   }
 
   .container:hover {
-    filter: drop-shadow(15px 15px 35px #0004);
+    filter: drop-shadow(13px 13px 25px #0006);
     transform: scale(1.03);
   }
 
   .container:active {
-    filter: drop-shadow(5px 5px 10px #0004);
+    filter: drop-shadow(5px 5px 10px #0006);
     transform: scale(0.98);
   }
 

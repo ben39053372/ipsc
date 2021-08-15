@@ -32,5 +32,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: var(--space-lg);
   }
 </style>
