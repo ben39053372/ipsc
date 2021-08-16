@@ -38,7 +38,7 @@
           handgunReadyCondition.chamber ? 'Loaded' : 'Empty'
         }}</label>
       </div>
-      <textarea v-model="handgunReadyCondition.detial" />
+      <textarea v-model="handgunReadyCondition.detail" />
       <Button type="submit">Submit</Button>
     </form>
   </Container>
