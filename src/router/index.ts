@@ -25,6 +25,16 @@ const routes: RouteRecordRaw[] = [
         name: 'Course',
         component: () => import('../screens/Course.vue'),
       },
+      {
+        path: '/courseList',
+        name: 'Course List',
+        component: () => import('../screens/CourseList.vue'),
+      },
+      {
+        path: '/createCourse',
+        name: 'Create Course',
+        component: () => import('../screens/CreateCourse.vue'),
+      },
     ],
   },
   {
