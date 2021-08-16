@@ -1,5 +1,4 @@
 <template lang="">
-  <img src="/images/ipsc.png" width="100" />
   <Container class="row">
     <TargetButton text="New Course" @click="handleNewCourseClick" />
     <TargetButton text="Join Course" @click="handleJoinCourseClick" />
@@ -38,8 +37,9 @@
   .row {
     display: flex;
     flex: 1;
-    width: 100%;
     justify-content: space-around;
     padding: var(--space-lg) var(--space-md);
+    flex-wrap: wrap;
+    gap: var(--space-lg);
   }
 </style>
