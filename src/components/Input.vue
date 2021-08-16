@@ -1,5 +1,9 @@
 <template lang="">
-  <input :class="{ small }" :value="modelValue" @input="handleInput" />
+  <input
+    :class="{ small }"
+    :value="modelValue.toString()"
+    @input="handleInput"
+  />
 </template>
 <script lang="ts">
   import { defineComponent } from 'vue';
