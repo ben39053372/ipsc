@@ -41,6 +41,10 @@
     padding: var(--space-lg) 0;
   }
 
+  .header > .container > img {
+    margin-left: var(--space-xl);
+  }
+
   .title {
     margin-left: var(--space-xl);
     align-self: center;
