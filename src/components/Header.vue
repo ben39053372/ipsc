@@ -31,6 +31,7 @@
   .header {
     display: flex;
     width: 100%;
+    color: #efefef;
     justify-content: center;
     background-color: var(--main-color);
   }

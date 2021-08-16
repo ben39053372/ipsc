@@ -8,15 +8,16 @@
   import { defineComponent } from 'vue';
   import TargetButton from '../components/TargetButton.vue';
   import Container from '../components/Container.vue';
+  import router from '../router';
 
   export default defineComponent({
     components: { TargetButton, Container },
     methods: {
       handleNewCourseClick() {
-        console.log('hi');
+        router.push({ name: 'Create Course' });
       },
       handleJoinCourseClick() {
-        console.log('join');
+        router.push({ name: 'Course List' });
       },
     },
   });
