@@ -1,7 +1,7 @@
 <template lang="">
   <div class="header">
     <Container>
-      <img src="/images/ipsc.png" width="50" @click="goToHomePage" />
+      <img src="/images/ipsc.png" @click="goToHomePage" />
       <h1 class="title" @click="goToHomePage">{{ title }}</h1>
     </Container>
   </div>
@@ -39,11 +39,12 @@
   .header > .container {
     display: flex;
     flex: 1;
-    padding: var(--space-lg) 0;
+    padding: var(--space-sm) 0;
   }
 
   .header > .container > img {
     margin-left: var(--space-xl);
+    height: 10vh;
   }
 
   .title {

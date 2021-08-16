@@ -29,7 +29,7 @@
     padding: 8px 20px;
     color: var(--text-color);
     border-radius: 4px;
-    border-width: 2;
+    border-width: 2px;
     border-style: solid;
     font-weight: 700;
     transition: transform 0.1s;
@@ -69,7 +69,7 @@
   }
 
   button:not(.outline) {
-    color: var(--text-color);
+    color: var(--button-text-color);
   }
 
   .outline {

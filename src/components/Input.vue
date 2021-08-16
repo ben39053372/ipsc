@@ -1,5 +1,5 @@
 <template lang="">
-  <input :class="[small]" :value="modelValue" @input="handleInput" />
+  <input :class="{ small }" :value="modelValue" @input="handleInput" />
 </template>
 <script lang="ts">
   import { defineComponent } from 'vue';
@@ -8,7 +8,7 @@
     name: 'Input',
     props: {
       modelValue: {
-        type: String,
+        type: [String, Number, Boolean],
         require: true,
         default: '',
       },
@@ -20,7 +20,6 @@
     emits: ['update:modelValue'],
     methods: {
       handleInput(e: Event) {
-        console.log(e);
         this.$emit('update:modelValue', (e.target as HTMLInputElement).value);
       },
     },
