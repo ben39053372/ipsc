@@ -3,6 +3,7 @@
     <Container>
       <img src="/images/ipsc.png" @click="goToHomePage" />
       <h1 class="title" @click="goToHomePage">{{ title }}</h1>
+      <h3 class="action" @click="gotoLogin">Login</h3>
     </Container>
   </div>
 </template>
@@ -23,6 +24,9 @@
       goToHomePage() {
         router.push({ name: 'Home' });
       },
+      gotoLogin() {
+        router.push({ name: 'Login' });
+      },
     },
   });
 </script>
@@ -42,7 +46,7 @@
     padding: var(--space-sm) 0;
   }
 
-  .header > .container > img {
+  img {
     margin-left: var(--space-xl);
     height: 10vh;
   }
@@ -52,5 +56,11 @@
     align-self: center;
     display: inline-block;
     width: fit-content;
+  }
+
+  .action {
+    display: flex;
+    align-self: center;
+    margin-left: auto;
   }
 </style>

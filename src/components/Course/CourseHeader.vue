@@ -18,6 +18,7 @@
 <script>
   import { defineComponent } from 'vue';
   import Paper from '../Paper.vue';
+  import { useI18n } from 'vue-i18n';
 
   export default defineComponent({
     name: 'CourseHeader',
@@ -25,7 +26,8 @@
       Paper,
     },
     setup() {
-      return {};
+      const { t } = useI18n();
+      return { t };
     },
   });
 </script>

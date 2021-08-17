@@ -10,6 +10,7 @@
     "stylelint": "npx stylelint \"src/**/*.{js,tsx,tsx,ts,vue}\""
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "mrm": "^3.0.5",
     "vue": "^3.0.5",
     "vue-i18n": "^9.1.7",
@@ -40,7 +41,8 @@
     "tailwindcss": "^2.2.7",
     "typescript": "^4.3.2",
     "vite": "^2.4.3",
-    "vue-tsc": "^0.0.24"
+    "vue-tsc": "^0.0.24",
+    "@types/axios": "^0.14.0"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",

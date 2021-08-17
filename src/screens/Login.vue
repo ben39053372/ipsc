@@ -7,7 +7,7 @@
       <Input v-model="password" />
       <div class="actions">
         <Button @click="login">Login</Button>
-        <Button outline color="secondary">Forgot Password</Button>
+        <!-- <Button outline color="secondary">Forgot Password</Button> -->
       </div>
     </Paper>
   </div>
@@ -36,6 +36,9 @@
         console.log('login', this.username, this.password);
         router.push({ name: 'Home' });
       },
+      forgotPassword() {
+        router.push({ name: 'forgotPassword' });
+      },
     },
   });
 </script>
@@ -55,6 +58,12 @@
 
   .form > * {
     margin: 10px;
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
 
   .actions > * {
