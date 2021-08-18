@@ -1,7 +1,7 @@
-import { serverClient } from '../utils/axios';
+import { mainClient } from '../services/mainServer';
 
 const DOMAIN = 'users';
 
 export const getUsers = () => {
-  return serverClient.get(`/${DOMAIN}`);
+  return mainClient.get(`/${DOMAIN}`);
 };

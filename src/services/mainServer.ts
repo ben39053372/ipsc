@@ -1,11 +1,11 @@
 import axios from 'axios';
 
-export const serverClient = axios.create({
+export const mainClient = axios.create({
   baseURL: 'localhost:8080',
   timeout: 3000,
 });
 
-serverClient.interceptors.request.use(
+mainClient.interceptors.request.use(
   config => {
     return config;
   },
@@ -14,7 +14,7 @@ serverClient.interceptors.request.use(
   },
 );
 
-serverClient.interceptors.response.use(
+mainClient.interceptors.response.use(
   res => {
     return res;
   },

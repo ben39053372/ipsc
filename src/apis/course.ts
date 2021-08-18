@@ -1,15 +1,21 @@
-import { serverClient } from '../utils/axios';
-
-const DOMAIN = 'courses';
+import { courseClient } from '../services/courseServer';
 
 export const getAllCourses = () => {
-  return serverClient.get(`/${DOMAIN}`);
+  return courseClient({
+    method: 'GET',
+  });
 };
 
 export const createCourse = (course: Course) => {
-  return serverClient.post(`/${DOMAIN}`, course);
+  return courseClient({
+    method: 'POST',
+    data: course,
+  });
 };
 
 export const removeCourse = (courseId: string) => {
-  return serverClient.delete(`/${DOMAIN}/${courseId}`);
+  return courseClient({
+    method: 'DELETE',
+    url: `/${courseId}`,
+  });
 };
