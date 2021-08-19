@@ -34,7 +34,6 @@ module.exports = {
       'error',
       'ObjectExpression > SpreadElement',
       'ObjectPattern > RestElement',
-      'AwaitExpression'
     ]
   }
 }
