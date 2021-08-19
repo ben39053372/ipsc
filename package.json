@@ -12,6 +12,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "mrm": "^3.0.5",
+    "swrv": "^1.0.0-beta.8",
     "vue": "^3.0.5",
     "vue-i18n": "^9.1.7",
     "vue-router": "4",
@@ -20,6 +21,7 @@
   },
   "devDependencies": {
     "@ehutch79/vite-eslint": "^0.0.1",
+    "@types/axios": "^0.14.0",
     "@types/vue": "^2.0.0",
     "@typescript-eslint/eslint-plugin": "^4.28.4",
     "@typescript-eslint/parser": "^4.28.4",
@@ -41,8 +43,7 @@
     "tailwindcss": "^2.2.7",
     "typescript": "^4.3.2",
     "vite": "^2.4.3",
-    "vue-tsc": "^0.0.24",
-    "@types/axios": "^0.14.0"
+    "vue-tsc": "^0.0.24"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",

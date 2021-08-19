@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const mainClient = axios.create({
-  baseURL: 'localhost:8080/users',
+  baseURL: 'http://localhost:8080/users',
   timeout: 3000,
 });
 

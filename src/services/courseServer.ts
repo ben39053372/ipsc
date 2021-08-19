@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const courseClient = axios.create({
-  baseURL: 'localhost:8080/courses',
+  baseURL: 'http://localhost:8080/courses',
   timeout: 3000,
 });
 
