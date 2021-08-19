@@ -1,6 +1,7 @@
+import { AxiosPromise } from 'axios';
 import { courseClient } from '../services/courseServer';
 
-export const getAllCourses = () => {
+export const getAllCourses = (): AxiosPromise<Course> => {
   return courseClient({
     method: 'GET',
   });

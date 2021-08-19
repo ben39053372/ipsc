@@ -16,7 +16,7 @@ courseClient.interceptors.request.use(
 
 courseClient.interceptors.response.use(
   res => {
-    return res;
+    return res.data;
   },
   error => {
     return Promise.reject(error);
